@@ -1,11 +1,11 @@
 package com.huolieniao.entities;
 
 import lombok.Data;
+
 import java.util.Date;
 
 @Data
-public class User {
-
+public class UserOrder {
     // 主键
     private Long id;
     // 昵称
@@ -18,4 +18,5 @@ public class User {
     private Integer sex;
     // 生日
     private Date birth;
+    private String ordername;
 }
