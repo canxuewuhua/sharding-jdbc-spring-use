@@ -130,3 +130,5 @@ select * from ksd_user u left join ksd_order o on u.orderid = o.id
 总结：其实尽管是关联查询 也是根据分片键 穷举所有  笛卡尔积 列出所有可能的结果 最后将结果集归并
 
 
+Sharding-JDBC数据分片主要流程是由SQL解析 →执行器优化 → SQL路由 →SQL改写 →SQL执行 →结果归并的流程组成。
+
